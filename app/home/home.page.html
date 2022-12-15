@@ -1,0 +1,269 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center">
+      OUTPATIENT SATISFACTION FORM
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card class="ion-no-padding">
+    <ion-card-header class="ion-no-padding">
+      <ion-img  src="https://scontent.xx.fbcdn.net/v/t1.15752-9/318976684_513043827552602_7079273613259830765_n.jpg?stp=dst-jpg_p403x403&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeHrfHnXkU5eh1kd0naX9j6hgcwWLXR9c76BzBYtdH1zvhqEmQOZF8IRMqIFxlrDcEQ&_nc_ohc=UDHTeHobnNcAX8-ax3f&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSkqFPesED0eQjPX49jtC8FVdK4I-jN0XlTvwiNHv6zag&oe=63BEA0CA"></ion-img>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-list>
+
+    <center>
+      <ion-label position="floating"> PATIENT DETAILS </ion-label>
+    </center>
+    <ion-item>
+      <ion-label position="floating"> Date of Admission </ion-label>
+      <ion-input [(ngModel)]="date" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Patient's Name </ion-label>
+      <ion-input [(ngModel)]="name" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Attending Physician </ion-label>
+      <ion-input [(ngModel)]="physician" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Date of Discharge </ion-label>
+      <ion-input [(ngModel)]="discharge" type="text"></ion-input>
+    </ion-item>
+
+
+  <ion-card class="ion-text-center">
+    <ion-card-content >
+      Hello to our dear patients, <br>
+<br>
+      This is a greeting from the whole Beatus Salvatoris family, we really appreciate your trust in us for taking care of your health.
+      <br>
+      <br>
+      For us to be able to continue to improve for the best, we are glad to hear your suggestions and comments about your experiences from us through answering the survey form. 
+      Every feedback and personal information will surely be safe and condifential.
+      <br>
+      <br>
+      <ion-card-header>
+        <ion-card-title>THANK YOU AND GOD BLESS!</ion-card-title>
+        <ion-card-subtitle>From: Beatus Salvatoris family</ion-card-subtitle>
+      </ion-card-header>
+
+    </ion-card-content>
+  </ion-card>
+
+  <br>
+  <ion-img  src="https://scontent.xx.fbcdn.net/v/t1.15752-9/318082738_474908144796619_8283714807628614239_n.png?_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeHNCK7uWHT3UrJEnwdVYllGOW-ZY905YYk5b5lj3TlhidocO8uq9Xb-iHwVO2aFj8c&_nc_ohc=AHtQyp-_vcoAX98thm5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTfgTOzY5v-RVmRjEBn__rqh79FjA0L9N0KZPAzPX1duw&oe=63BEBD5B"></ion-img>
+  <br>
+  <center>
+    <ion-label position="floating"> EMERGENCY </ion-label>
+  </center>
+    <br>
+    <ion-item>
+      <ion-label position="floating"> Level of Care </ion-label>
+      <ion-select [(ngModel)] = "care" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Way of Giving Services</ion-label>
+      <ion-select [(ngModel)] = "services" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Action and Response of Staffs</ion-label>
+      <ion-select [(ngModel)] = "staffs" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <br>
+  <center>
+    <ion-label position="floating"> WARD </ion-label>
+  </center>
+    <br>
+    <ion-item>
+      <ion-label position="floating"> Administering of Medication on Time</ion-label>
+      <ion-select [(ngModel)] = "time" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Nurses Ask and Check Patients Regularly</ion-label>
+      <ion-select [(ngModel)] = "regularly" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Availability of Beds and Spaces</ion-label>
+      <ion-select [(ngModel)] = "spaces" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <br>
+  <center>
+    <ion-label position="floating"> OPERATING ROOM </ion-label>
+  </center>
+    <br>
+    <ion-item>
+      <ion-label position="floating"> Courtesy and Professionalism of Medical Staffs</ion-label>
+      <ion-select [(ngModel)] = "medicalstaffs" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Comfort and Care</ion-label>
+      <ion-select [(ngModel)] = "andcare" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <br>
+  <center>
+    <ion-label position="floating"> DELIVERY ROOM </ion-label>
+  </center>
+    <br>
+    <ion-item>
+      <ion-label position="floating"> Comfort of the Delivery Room</ion-label>
+      <ion-select [(ngModel)] = "room" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Quality of Care Received</ion-label>
+      <ion-select [(ngModel)] = "received" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <br>
+  <center>
+    <ion-label position="floating"> LABORATORY ROOM </ion-label>
+  </center>
+    <br>
+    <ion-item>
+      <ion-label position="floating"> Courtesy of the Staff</ion-label>
+      <ion-select [(ngModel)] = "thestaff" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Privacy of the Laboratory Room</ion-label>
+      <ion-select [(ngModel)] = "laboratoryroom" placeholder="Select Answer">
+        <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+        <ion-select-option  value="Adequate">Adequate</ion-select-option>
+        <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+        <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+        <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <br>
+  <center>
+    <ion-label position="floating"> OTHER QUESTIONS </ion-label>
+  </center>
+    <br>
+    <ion-item>
+      <ion-label position="floating"> Will you recommend us to others?</ion-label>
+      <ion-select [(ngModel)] = "others" placeholder="Select Answer">
+        <ion-select-option  value="Yes">Yes</ion-select-option>
+        <ion-select-option  value="No">No</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Will you trust your health care again with our Hospital?</ion-label>
+      <ion-select [(ngModel)] = "hospital" placeholder="Select Answer">
+        <ion-select-option  value="Yes">Yes</ion-select-option>
+        <ion-select-option  value="No">No</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> How would you rate your experience with us?</ion-label>
+      <ion-select [(ngModel)] = "us" placeholder="Select Answer">
+        <ion-select-option  value="Happy">Happy</ion-select-option>
+        <ion-select-option  value="Sad">Sad</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+    
+    <!-- Add Button -->
+    <ion-row>
+      <ion-col>
+        <ion-button type="button" (click)="addStudent()" color="success" shape="full" expand="block">
+Add Record
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="button" (click)="getStudents()" 
+        color="primary" shape="full" expand="block"> View Records</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-card class="ion-no-padding">
+      <ion-card-header class="ion-no-padding">
+        <ion-img  src="https://scontent.xx.fbcdn.net/v/t1.15752-9/318882571_901874584163110_6242077856225759006_n.jpg?stp=dst-jpg_p403x403&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeGb0S7nQAoDQ8pn6pODMcws4Q2JCGqPZc3hDYkIao9lzaSas8WuQyJhhnKwGbYmqtU&_nc_ohc=xf33ZMcV9joAX9DFfSO&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdT23OWeoNX0ZfDLf1mBGjiD229jtHIvYw_8pLmIS9Y4Cw&oe=63BECD84"></ion-img>
+      </ion-card-header>
+    </ion-card>
+    <ion-list-header></ion-list-header>
+    <ion-item lines="inset" *ngFor="let student of students">
+      <ion-label>
+        <h5>{{student.id}} - {{student.date}} - {{student.name}} , {{student.physician}} , {{student.discharge}}, {{student.care}} , {{student.services}} , {{student.staffs}}, {{student.time}} , {{student.regularly}} , {{student.spaces}}, {{student.medicalstaffs}} , {{student.andcare}} , {{student.room}}, {{student.received}} , {{student.thestaff}} , {{student.laboratoryroom}}, {{student.others}} , {{student.hospital}} , {{student.us}}</h5>
+      </ion-label>
+
+      <div class="item-note">
+        <ion-icon name="create" style="zoom: 2.0" [routerLink]="['/update-student',student.id]"></ion-icon>
+        <ion-icon name="trash" style="zoom: 2.0" (click)="deleteStudent(student.id)"></ion-icon>
+      </div>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
