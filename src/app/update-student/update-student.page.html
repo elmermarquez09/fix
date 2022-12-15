@@ -1,0 +1,219 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center">UPDATE OUTPATIENT SATISFACTION FORM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <center>
+      <ion-label position="floating"> PATIENT DETAILS </ion-label>
+    </center>
+    <ion-item>
+      <ion-label position="floating"> Date of Admission </ion-label>
+      <ion-input [(ngModel)]="date" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Patient's Name </ion-label>
+      <ion-input [(ngModel)]="name" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Attending Physician </ion-label>
+      <ion-input [(ngModel)]="physician" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Date of Discharge </ion-label>
+      <ion-input [(ngModel)]="discharge" type="text"></ion-input>
+    </ion-item>
+  
+    <br>
+    <ion-img  src="https://scontent.xx.fbcdn.net/v/t1.15752-9/318082738_474908144796619_8283714807628614239_n.png?_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeHNCK7uWHT3UrJEnwdVYllGOW-ZY905YYk5b5lj3TlhidocO8uq9Xb-iHwVO2aFj8c&_nc_ohc=AHtQyp-_vcoAX98thm5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTfgTOzY5v-RVmRjEBn__rqh79FjA0L9N0KZPAzPX1duw&oe=63BEBD5B"></ion-img>
+    <br>
+
+    <center>
+      <ion-label position="floating"> EMERGENCY </ion-label>
+    </center>
+      <br>
+      <ion-item>
+        <ion-label position="floating"> Level of Care </ion-label>
+        <ion-select [(ngModel)] = "care" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Way of Giving Services</ion-label>
+        <ion-select [(ngModel)] = "services" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Action and Response of Staffs</ion-label>
+        <ion-select [(ngModel)] = "staffs" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+    <center>
+      <ion-label position="floating"> WARD </ion-label>
+    </center>
+      <br>
+      <ion-item>
+        <ion-label position="floating"> Administering of Medication on Time</ion-label>
+        <ion-select [(ngModel)] = "time" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Nurses Ask and Check Patients Regularly</ion-label>
+        <ion-select [(ngModel)] = "regularly" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Availability of Beds and Spaces</ion-label>
+        <ion-select [(ngModel)] = "spaces" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+    <center>
+      <ion-label position="floating"> OPERATING ROOM </ion-label>
+    </center>
+      <br>
+      <ion-item>
+        <ion-label position="floating"> Courtesy and Professionalism of Medical Staffs</ion-label>
+        <ion-select [(ngModel)] = "medicalstaffs" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Comfort and Care</ion-label>
+        <ion-select [(ngModel)] = "andcare" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+    <center>
+      <ion-label position="floating"> DELIVERY ROOM </ion-label>
+    </center>
+      <br>
+      <ion-item>
+        <ion-label position="floating"> Comfort of the Delivery Room</ion-label>
+        <ion-select [(ngModel)] = "room" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Quality of Care Received</ion-label>
+        <ion-select [(ngModel)] = "received" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+    <center>
+      <ion-label position="floating"> LABORATORY ROOM </ion-label>
+    </center>
+      <br>
+      <ion-item>
+        <ion-label position="floating"> Courtesy of the Staff</ion-label>
+        <ion-select [(ngModel)] = "thestaff" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Privacy of the Laboratory Room</ion-label>
+        <ion-select [(ngModel)] = "laboratoryroom" placeholder="Select Answer">
+          <ion-select-option  value="Unsatisfied">Unsatisfied</ion-select-option>
+          <ion-select-option  value="Adequate">Adequate</ion-select-option>
+          <ion-select-option  value="Slightly Satisfied">Slightly Satisfied</ion-select-option>
+          <ion-select-option  value="Satisfied">Satisfied</ion-select-option>
+          <ion-select-option  value="Very Satisfied">Very Satisfied</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+    <center>
+      <ion-label position="floating"> OTHER QUESTIONS </ion-label>
+    </center>
+      <br>
+      <ion-item>
+        <ion-label position="floating"> Will you recommend us to others?</ion-label>
+        <ion-select [(ngModel)] = "others" placeholder="Select Answer">
+          <ion-select-option  value="Yes">Yes</ion-select-option>
+          <ion-select-option  value="No">No</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> Will you trust your health care again with our Hospital?</ion-label>
+        <ion-select [(ngModel)] = "hospital" placeholder="Select Answer">
+          <ion-select-option  value="Yes">Yes</ion-select-option>
+          <ion-select-option  value="No">No</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> How would you rate your experience with us?</ion-label>
+        <ion-select [(ngModel)] = "us" placeholder="Select Answer">
+          <ion-select-option  value="Happy">Happy</ion-select-option>
+          <ion-select-option  value="Sad">Sad</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="button" (click)="updateStudent()"
+        color="success" shape="full" expand="block">Update Record</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+
+  </ion-list>
+
+</ion-content>
